@@ -1,0 +1,18 @@
+public class OverridingStaticMethod {
+    public static void main(String args[]) {
+        K pc = new H();
+        pc.display();
+    }
+}
+
+class K {
+    public static void display() {
+        System.out.printf("display() method of the  class A.");
+    }
+}
+
+class H extends K {
+    public static void display() {
+        System.out.println("static method in  Class  B ");
+    }
+}
